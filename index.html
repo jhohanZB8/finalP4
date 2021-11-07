@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FINAL</title>
+	<style>
+		.titulo{
+			position: absolute;
+			font-size: 50px;
+			font-family: forte;
+			left: 8%;
+		}
+		.al{
+			position: absolute;
+			top: 11%;
+			left: 1%;
+			border: solid black 5px;
+			border-radius: 20%;
+			border-radius: 20%;
+			border-radius: 20%;
+			width: 500px;
+            height: 510px;
+		}
+		.algo1{
+			position: absolute;
+			font-size: 50px;
+			font-family: forte;
+			left: 25%;
+			color: white;
+		}
+		.ft1{
+			position: absolute;
+			top: 15%;
+			left: 1%;
+		}
+		.bo1{
+			position: absolute;
+    	    border: solid black 4px;
+            width: 150px;
+            height: 150px;
+            left: 40%;
+            top: 15%;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            transition: all 2s;
+		}
+		.bo2{
+			position: absolute;
+    	    border: solid black 4px;
+            width: 150px;
+            height: 150px;
+            left: 40%;
+            top: 60%;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            transition: all 2s;
+            z-index: 5px;
+		}
+		.PE{
+			position: absolute;
+			font-size: 20px;
+			font-family: forte;
+			left: 15%;
+			top: 30%;
+			color: white;
+		}
+		.EJ{
+			position: absolute;
+			font-size: 20px;
+			font-family: forte;
+			left: 15%;
+			top: 40%;
+			color: white;
+		}
+		.ft2{
+			position: absolute;
+			top: 20%;
+			left: 160%;
+			
+		}
+		.bo1:hover{
+			background: orange;
+		}
+		.bo2:hover{
+			background: orange;
+		}
+		.ft3{
+			position: absolute;
+			top: 15%;
+			left: 1%;
+			display: none;
+			
+		}
+		.bo1:active .ft3{
+			position: absolute;
+			top: 50%;
+			display: block;
+			left: 150%;
+		}
+		.bo1:active .ft2{
+			position: absolute;
+			top: 50%;
+			display: none;
+		}
+		.vid1{
+		    position: absolute;
+            top: -160%;
+			left: 150%;
+			display: none;
+		}
+		.cerrar{
+			position: absolute;
+			border: solid black 5px;
+		}
+	</style>
+</head>
+<body bgcolor="red">
+<div class="titulo">EXAMEN FINAL</div>
+<div class="al">
+	<div class="algo1">ALGORITMO</div>
+	<div class="ft1"><img src="algo.jpg" height="350px"></div>
+</div>
+<div class="bo1">
+	<div class="PE">PRUEBA DE ESCRITORIO</div>
+	<div class="ft3"><img src="prueba.jpg" height="260px"></div>
+	<div class="ft2" id="aa2"><img src="gale.png"></div>
+</div>
+
+<div class="bo2" id="aa1" onclick="document.getElementById('video1').style.display='block'">
+	<div class="EJ">EJERCICIO</div>
+	<div class="vid1" id="video1"><video src="FINAL.mp4" autoplay loop controls height="330px"></video>
+		<div class="cerrar" id="c1" onclick="document.getElementById('video1').style.display='none'">CERRAR</div>
+	</div>
+</div>
+
+</body>
+</html>
